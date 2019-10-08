@@ -58,8 +58,10 @@ a:hover {
 
 #ubea-logo a img {
   width: 100%;
-  max-width: 250px;
+  max-width: 150px;
   height: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .ubea-nav {
