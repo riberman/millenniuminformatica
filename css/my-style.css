@@ -1,0 +1,107 @@
+.btn-primary {
+    background: #006856;
+    border: 2px solid #006856 !important;
+}
+
+.btn-primary:hover {
+    background: #bdc3c7;
+}
+
+.ubea-nav ul li > a {
+    padding: 30px 20px;
+}
+
+.ubea-nav ul li.active > a {
+    color: #006856 !important;
+}
+
+.ubea-nav ul li > a:hover {
+    color: #006856 !important;
+}
+
+.ubea-cover a {
+    color: #006856 !important;
+}
+
+.ubea-social-icons li a {
+  color: #006856 !important;
+}
+
+.ubea-heading h2:before {
+  background: #006856 !important;
+}
+
+#ubea-services .feature-left h3 {
+  color: #006856 !important;
+}
+
+a {
+    color: #006856;
+}
+
+a:hover {
+    color: #bdc3c7;
+}
+
+#ubea-offcanvas {
+  color: black;
+    background: white;
+}
+
+#ubea-offcanvas a {
+    color: #006856;
+}
+
+#ubea-offcanvas ul li {
+    padding: 5px;
+}
+
+#ubea-logo a img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+
+.ubea-nav {
+  padding: 10px;
+}
+
+#ubea-hero .btn.btn-primary:hover {
+  background: #34495e !important;
+  border: 2px solid #34495e !important;
+}
+
+::selection {
+  background: #006856; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #006856; /* Gecko Browsers */
+}
+
+.ubea-accordion.active h3 {
+  color: #006856;
+}
+
+#menu-phone {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #006856;
+}
+
+element.style {
+    width: 100%;
+    float: left;
+    margin-right: -100%;
+    position: relative;
+    opacity: 1;
+    display: block;
+    z-index: 2;
+    height: 969px;
+}
+
+#email {
+  background-color: rgba(0, 0, 0, 0.5);
+}
