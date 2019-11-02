@@ -7,7 +7,7 @@
 }
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *
 * ======================================================= */
 body {
@@ -1057,6 +1057,37 @@ form label {
   text-transform: uppercase;
 }
 
+.whatsapp {
+  position: fixed;
+  bottom: 75px;
+  right: 20px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.whatsapp.active {
+  opacity: 1;
+  visibility: visible;
+}
+.whatsapp a {
+  width: 50px;
+  height: 50px;
+  display: table;
+  text-align: center;
+}
+.whatsapp a i {
+  height: 50px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.whatsapp a:hover, .whatsapp a:active, .whatsapp a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
 .gototop {
   position: fixed;
   bottom: 20px;
@@ -1848,7 +1879,7 @@ form label {
 
 #ubea-faq {
   padding-top: 2em;
-  position: relative;  
+  position: relative;
   background: #efefef;
 }
 .ubea-accordion {
