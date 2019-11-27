@@ -1,10 +1,11 @@
 .btn-primary {
     background: #006856;
     border: 2px solid #006856 !important;
+    color: #FFF !important;
 }
 
 .btn-primary:hover {
-    background: #bdc3c7;
+    background: rgba(0, 0, 0, 0.5) !important;
 }
 
 .ubea-nav ul li > a {
@@ -35,13 +36,9 @@
   color: #006856 !important;
 }
 
-a {
-    color: #006856;
-}
-
-a:hover {
-    color: #bdc3c7;
-}
+/* a:hover {
+    color: #bdc3c7 !important;
+} */
 
 #ubea-offcanvas {
   color: black;
@@ -74,22 +71,14 @@ a:hover {
 }
 
 ::selection {
-  background: #006856; /* WebKit/Blink Browsers */
+  color: #fff !important;
+  background: #006856 !important; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #006856; /* Gecko Browsers */
+  background: #006856 !important; /* Gecko Browsers */
 }
 
 .ubea-accordion.active h3 {
-  color: #006856;
-}
-
-#menu-phone {
-  font-size: 20px;
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase;
-  font-weight: bold;
   color: #006856;
 }
 
@@ -107,3 +96,73 @@ element.style {
 #email {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+.btn-primary:hover {
+    background: rgba(0, 0, 0, 0.5) !important;
+    border: 2px solid rgba(0, 0, 0, 0.5) !important;
+}
+
+.form-control:active, .form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #006856;
+}
+
+.well {
+    background-color: rgba(0,0,0, 0.7) !important;
+    color: #FFF;
+  }
+
+legend {
+    color: #FFF;
+  }
+
+.form-control {
+  color: #FFF;
+}
+
+#ubea-services .feature-left .icon i {
+    color: #006856 !important;
+}
+
+.ubea-nav ul li > a {
+    color: #000 !important;
+}
+
+.ubea-nav ul li.active > a {
+    color: #006856 !important;
+}
+
+a {
+  color: #006856;
+}
+
+a:hover {
+  color: #000;
+}
+
+.active {
+    color: #006856;
+}
+
+.ubea-cover.ubea-cover-xs {
+    height: 750px;
+}
+
+.container {
+    margin-top: 10%;
+  }
+
+  #ubea-hero .btn-primary:hover {
+      background: rgba(0, 0, 0, 0.5) !important;
+      border: 2px solid rgba(0, 0, 0, 0.5) !important;
+  }
+
+  #menu-phone {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #006856 !important;
+  }
