@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Contato</title>
+<title>Millennium Informática — Contato</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "https://millenniumservicos.com.br/";
+    };
+</script>
 </head>
 <body>
 <div class="alert alert-success" role="alert">
-  <h4 class="alert-heading">Well done!</h4>
-  <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+  <h4 class="alert-heading">Millennium Informática — Contato</h4>
+  <p>O email de contato foi enviado com sucesso, por favor aguarde o recebimento do email de confirmação em sua caixa de entrada.</p>
   <hr>
-  <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+  <p class="mb-0">Feche esta aba ou clique em voltar para ser redirecionado novamente para o site.</p>
+  <hr>
+  <button id="myButton" type="button" class="btn btn-primary">Voltar</button>
 </div>
 	<?php 
 
