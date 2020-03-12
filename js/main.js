@@ -406,15 +406,15 @@
 	// Desktop or mobile
 		var imgFolder =function() {
 			if (screen.width >= 840){
-				document.getElementById("img-1").style.backgroundImage = "url('images/slider/img-1.png')";
-				document.getElementById("img-2").style.backgroundImage = "url('images/slider/img-2.png')";
-				document.getElementById("img-3").style.backgroundImage = "url('images/slider/img-3.png')";
-				document.getElementById("img-4").style.backgroundImage = "url('images/slider/img-4.png')";
+				document.getElementById("img-1").style.backgroundImage = "url('https://riberman.github.io/millenniuminformatica/images/slider/img-1.png')";
+				document.getElementById("img-2").style.backgroundImage = "url('https://riberman.github.io/millenniuminformatica/images/slider/img-2.png')";
+				document.getElementById("img-3").style.backgroundImage = "url('https://riberman.github.io/millenniuminformatica/images/slider/img-3.png')";
+				document.getElementById("img-4").style.backgroundImage = "url('https://riberman.github.io/millenniuminformatica/images/slider/img-4.png')";
 			} else {
-				document.getElementById("img-1").style.backgroundImage = "url('images/slider/mobile/img-1.png')";
-				document.getElementById("img-2").style.backgroundImage = "url('images/slider/mobile/img-2.png')";
-				document.getElementById("img-3").style.backgroundImage = "url('images/slider/mobile/img-3.png')";
-				document.getElementById("img-4").style.backgroundImage = "url('images/slider/mobile/img-4.png')";
+				document.getElementById("img-1").style.backgroundImage = "url('https://riberman.github.io/millenniuminformatica/images/slider/mobile/img-1.png')";
+				document.getElementById("img-2").style.backgroundImage = "url('https://riberman.github.io/millenniuminformatica/images/slider/mobile/img-2.png')";
+				document.getElementById("img-3").style.backgroundImage = "url('https://riberman.github.io/millenniuminformatica/images/slider/mobile/img-3.png')";
+				document.getElementById("img-4").style.backgroundImage = "url('https://riberman.github.io/millenniuminformatica/images/slider/mobile/img-4.png')";
 			}
 			console.log(screen.width);
 		};
