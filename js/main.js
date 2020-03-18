@@ -330,18 +330,18 @@
 	};
 
 	var accordion = function() {
-		$('.ubea-accordion-heading').on('click', function(event){
-
-			var $this = $(this);
-
-			$this.closest('.ubea-accordion').find('.ubea-accordion-content').slideToggle(400, 'easeInOutExpo');
-			if ($this.closest('.ubea-accordion').hasClass('active')) {
-				$this.closest('.ubea-accordion').removeClass('active');
-			} else {
-				$this.closest('.ubea-accordion').addClass('active');
-			}
-			event.preventDefault();
-		});
+		// $('.ubea-accordion-heading').on('click', function(event){
+		//
+		// 	var $this = $(this);
+		//
+		// 	$this.closest('.ubea-accordion').find('.ubea-accordion-content').slideToggle(400, 'easeInOutExpo');
+		// 	if ($this.closest('.ubea-accordion').hasClass('active')) {
+		// 		$this.closest('.ubea-accordion').removeClass('active');
+		// 	} else {
+		// 		$this.closest('.ubea-accordion').addClass('active');
+		// 	}
+		// 	event.preventDefault();
+		// });
 	};
 
 	var sliderMain = function() {

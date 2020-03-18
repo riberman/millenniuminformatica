@@ -2078,4 +2078,30 @@ form label {
   font-size: 22px;
 }
 
+.ubea-accordion-heading {
+  display: inline-block !important;
+}
+
+.person-text {
+  padding-top: 25px !important;
+  padding-left: 25px !important;
+  float: right;
+}
+
+.person-img {
+  float: left;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.italic {
+  font-style: italic;
+  color: #777;
+}
+
+.ubea-accordion-content {
+  display: block !important;
+}
+
 /*# sourceMappingURL=style.css.map */
