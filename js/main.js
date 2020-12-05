@@ -1,5 +1,5 @@
 ;(function () {
-	
+
 	'use strict';
 
 	var isMobile = {
@@ -48,7 +48,7 @@
 
 	};
 
-	
+
 
 	var header = function() {
 		$('.header-fixed').css('padding-top', $('.ubea-nav').height());
@@ -96,14 +96,14 @@
 			$this
 				.addClass('active')
 				.find('ul')
-				.slideDown(500, 'easeOutExpo');				
+				.slideDown(500, 'easeOutExpo');
 		}).mouseleave(function(){
 
 			var $this = $(this);
 			$this
 				.removeClass('active')
 				.find('ul')
-				.slideUp(500, 'easeOutExpo');				
+				.slideUp(500, 'easeOutExpo');
 		});
 
 
@@ -113,7 +113,7 @@
 
     			$('body').removeClass('offcanvas');
     			$('.js-ubea-nav-toggle').removeClass('active');
-				
+
 	    	}
 		});
 	};
@@ -133,9 +133,9 @@
 	var navigationSection = function() {
 
 		var $section = $('div[data-section]');
-		
+
 		$section.waypoint(function(direction) {
-		  	
+
 		  	if (direction === 'down') {
 		    	navActive($(this.element).data('section'));
 		  	}
@@ -177,7 +177,7 @@
 		$('.animate-box').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('animated-fast') ) {
-				
+
 				i++;
 
 				$(this.element).addClass('item-animate');
@@ -200,9 +200,9 @@
 							el.removeClass('item-animate');
 						},  k * 200, 'easeInOutExpo' );
 					});
-					
+
 				}, 100);
-				
+
 			}
 
 		} , { offset: '85%' } );
@@ -232,7 +232,7 @@
 
 
 	var owlCarousel = function(){
-		
+
 		var owl = $('.owl-carousel-carousel');
 		owl.owlCarousel({
 			items: 3,
@@ -280,13 +280,13 @@
 	var goToTop = function() {
 
 		$('.js-gotop').on('click', function(event){
-			
+
 			event.preventDefault();
 
 			$('html, body').animate({
 				scrollTop: $('html').offset().top
 			}, 500, 'easeInOutExpo');
-			
+
 			return false;
 		});
 
@@ -300,7 +300,7 @@
 			}
 
 		});
-	
+
 	};
 
 
@@ -320,9 +320,9 @@
 	var counterWayPoint = function() {
 		if ($('#ubea-counter').length > 0 ) {
 			$('#ubea-counter').waypoint( function( direction ) {
-										
+
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-					setTimeout( counter , 400);					
+					setTimeout( counter , 400);
 					$(this.element).addClass('animated');
 				}
 			} , { offset: '90%' } );
@@ -330,22 +330,22 @@
 	};
 
 	var accordion = function() {
-		$('.ubea-accordion-heading').on('click', function(event){
-
-			var $this = $(this);
-
-			$this.closest('.ubea-accordion').find('.ubea-accordion-content').slideToggle(400, 'easeInOutExpo');
-			if ($this.closest('.ubea-accordion').hasClass('active')) {
-				$this.closest('.ubea-accordion').removeClass('active');
-			} else {
-				$this.closest('.ubea-accordion').addClass('active');
-			}
-			event.preventDefault();
-		});
+		// $('.ubea-accordion-heading').on('click', function(event){
+		//
+		// 	var $this = $(this);
+		//
+		// 	$this.closest('.ubea-accordion').find('.ubea-accordion-content').slideToggle(400, 'easeInOutExpo');
+		// 	if ($this.closest('.ubea-accordion').hasClass('active')) {
+		// 		$this.closest('.ubea-accordion').removeClass('active');
+		// 	} else {
+		// 		$this.closest('.ubea-accordion').addClass('active');
+		// 	}
+		// 	event.preventDefault();
+		// });
 	};
 
 	var sliderMain = function() {
-		
+
 	  	$('#ubea-hero .flexslider').flexslider({
 			animation: "fade",
 			slideshowSpeed: 5000,
@@ -365,14 +365,14 @@
 
 	  	});
 
-	  	$('#ubea-hero .flexslider .slides > li').css('height', $(window).height());	
+	  	$('#ubea-hero .flexslider .slides > li').css('height', $(window).height());
 	  	$(window).resize(function(){
-	  		$('#ubea-hero .flexslider .slides > li').css('height', $(window).height());	
+	  		$('#ubea-hero .flexslider .slides > li').css('height', $(window).height());
 	  	});
 
 	};
 
-	
+
 	$(function(){
 		fullHeight();
 		mobileMenuOutsideClick();
@@ -389,6 +389,7 @@
 		counterWayPoint();
 		accordion();
 		sliderMain();
+		imgFolder();
 	});
 
 
@@ -401,3 +402,66 @@
 
   ga('create', 'UA-10146041-21', 'auto');
   ga('send', 'pageview');
+
+	// Desktop or mobile
+		var imgFolder =function() {
+			if (screen.width >= 840){
+				document.getElementById("img-1").style.backgroundImage = "url('https://riberman.github.io/millenniuminformatica/images/slider/img-1.png')";
+				document.getElementById("img-2").style.backgroundImage = "url('https://riberman.github.io/millenniuminformatica/images/slider/img-2.png')";
+				document.getElementById("img-3").style.backgroundImage = "url('https://riberman.github.io/millenniuminformatica/images/slider/img-3.png')";
+				document.getElementById("img-4").style.backgroundImage = "url('https://riberman.github.io/millenniuminformatica/images/slider/img-4.png')";								document.getElementById("mobile-height").style.display = "none";
+			} else {
+				document.getElementById("img-1").style.backgroundImage = "url('https://riberman.github.io/millenniuminformatica/images/slider/mobile/img-1.png')";
+				document.getElementById("img-2").style.backgroundImage = "url('https://riberman.github.io/millenniuminformatica/images/slider/mobile/img-2.png')";
+				document.getElementById("img-3").style.backgroundImage = "url('https://riberman.github.io/millenniuminformatica/images/slider/mobile/img-3.png')";
+				document.getElementById("img-4").style.backgroundImage = "url('https://riberman.github.io/millenniuminformatica/images/slider/mobile/img-4.png')";								document.getElementById("full-height").style.display = "none";
+			}
+			console.log(screen.width);
+		};				
+		
+	// Slide Companies
+		var slideIndex = 1;
+		var autoChange = true;
+		showDivs(slideIndex);
+		playCompanies();
+
+		function plusDivs(n, bool) {
+			showDivs(slideIndex += n);
+			autoChange = bool;
+		};
+
+		function currentDiv(n, bool) {
+			showDivs(slideIndex = n);
+			autoChange = bool;
+		};
+
+		function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			//var dots = document.getElementsByClassName("demo");
+			if (n > x.length) {
+				slideIndex = 1
+			}
+			if (n < 1) {
+				slideIndex = x.length
+			}
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			//for (i = 0; i < dots.length; i++) {
+			//dots[i].className = dots[i].className.replace(" w3-red", "");
+			//}
+			x[slideIndex-1].style.display = "block";
+			//dots[slideIndex-1].className += " w3-red";
+		};
+
+		function playCompanies() {
+			setTimeout(function() {
+				if (autoChange) {
+					plusDivs(1, true);
+					playCompanies();
+				} else {
+					autoChange = false;
+				}
+			}, 9000);
+		};
